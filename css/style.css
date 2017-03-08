@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Universal Styles*/
+
+/*Typography*/
+
+body {
+  font-size: 1.4 rem;
+  font-family: sans-serif;
+  color: #333;
+
+  /*makes font smoother*/
+  - webkit-font-smoothing: antialiased;
+  - moz-osx-font-smoothing: grayscale;
+}
