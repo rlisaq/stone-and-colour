@@ -17,3 +17,27 @@ body {
   - webkit-font-smoothing: antialiased;
   - moz-osx-font-smoothing: grayscale;
 }
+
+/*header*/
+
+.hero-image {
+  background-size: cover;
+  height: 100vh;
+}
+
+.logo-image{
+  width: 22rem;
+  height: 22rem;
+}
+
+.hero-content{
+  color: #fff;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  max-width: 40vw;
+}
+
+.hero-content p {
+  padding-left: 2vw;
+  font-size: 1.2rem;
+}
