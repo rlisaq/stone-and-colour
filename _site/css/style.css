@@ -7,6 +7,17 @@
 /*Universal Styles*/
 
 /*Typography*/
+h1 h2 h3 h4{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h5 h6{
+  font-family: 'Lato', sans-serif;
+}
+
+h1{
+  font-size: 3rem;
+}
 
 body {
   font-size: 1.4 rem;
@@ -47,11 +58,30 @@ body {
 }
 
 .featured{
-  background-color: lightgrey;
+  background-color: #fff;
 }
 
 .latest-photo {
   background-size: cover;
   background-position: center center;
   height: 14rem;
+}
+
+.kitchen-photo{
+  background-size: cover;
+  background-position: center center;
+  height: 25rem
+}
+
+.kitchen-left{
+  background-size: cover;
+  background-position: center center;
+  height: 55rem
+}
+
+.living_room-right{
+  background-size: cover;
+  background-position: center center;
+  height: 40rem
+
 }
