@@ -41,3 +41,17 @@ body {
   padding-left: 2vw;
   font-size: 1.2rem;
 }
+
+.center {
+  text-align: center;
+}
+
+.featured{
+  background-color: lightgrey;
+}
+
+.latest-photo {
+  background-size: cover;
+  background-position: center center;
+  height: 14rem;
+}
