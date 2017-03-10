@@ -147,23 +147,51 @@ nav a:hover {
 .kitchen-left{
   background-size: cover;
   background-position: center center;
-  height: 64rem
+  height: 64rem;
 }
 
 .living_collection_small{
   background-size: cover;
   background-position: center center;
-  height: 25rem
+  height: 25rem;
 }
 
 .living_room-right{
   background-size: cover;
   background-position: center center;
-  height: 64rem
+  height: 64rem;
 }
 
 .collection-block{
   padding: 2rem;
+}
+
+/*About Me*/
+.about-image {
+  background-size: cover;
+  background-position: center center;
+  height: 30rem;
+  position: relative;
+}
+
+.about-border{
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  border: 2px solid black;
+  bottom: -1rem;
+  right: -1rem;
+}
+
+.about-text{
+  position: absolute;
+  bottom:1rem;
+  right:1rem;
+  color: black;
+}
+
+.about-paragraph{
+  text-align: left;
 }
 
 /*Events*/
@@ -171,11 +199,22 @@ nav a:hover {
 }
 
 .event-details{
-  border-right: 1px solid black;
+  border-left: 1px solid black;
 
 }
 
 .event-description{
   line-height: 100%;
 
+}
+
+/*Footer*/
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo-image-footer{
+  width: 12rem;
+  height: 12rem;
 }
