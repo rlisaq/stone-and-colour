@@ -2,34 +2,107 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*border: 1px solid rgb(245, 245, 245);*/
 }
 
 /*Universal Styles*/
 
-/*Typography*/
-h1 h2 h3 h4{
-  font-family: 'Fira Sans', sans-serif;
+.padding-default{
+  padding: 10vh 0
 }
 
-h5 h6{
+.no-padding {
+  padding: 0;
+}
+
+.no-padding-top{
+  padding-top: 0;
+}
+
+.no-padding-bottom{
+  padding-bottom: 0;
+}
+
+.no-padding-left{
+  padding-left: 0;
+}
+
+.no-padding-right{
+  padding-right: 0;
+}
+
+.max-width-default {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.max-width-large {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.max-width-small {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.featured{
+  background-color: #efefef;
+}
+
+/*Typography*/
+body {
+  font-size: 1.4 rem;
   font-family: 'Lato', sans-serif;
+  color: #333;
+
+  /*makes font smoother*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Fira Sans', sans-serif;
 }
 
 h1{
   font-size: 3rem;
 }
 
-body {
-  font-size: 1.4 rem;
-  font-family: sans-serif;
-  color: #333;
 
-  /*makes font smoother*/
-  - webkit-font-smoothing: antialiased;
-  - moz-osx-font-smoothing: grayscale;
-}
 
 /*header*/
+
+header{
+  text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+nav{
+  height: 3.5rem;
+  line-height: 3.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a{
+  color: #fff;
+  background-color: transparent;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #d6922a;
+  background-color: white;
+}
 
 .hero-image {
   background-size: cover;
@@ -57,9 +130,7 @@ body {
   text-align: center;
 }
 
-.featured{
-  background-color: #fff;
-}
+/*Collections*/
 
 .latest-photo {
   background-size: cover;
@@ -76,12 +147,35 @@ body {
 .kitchen-left{
   background-size: cover;
   background-position: center center;
-  height: 55rem
+  height: 64rem
+}
+
+.living_collection_small{
+  background-size: cover;
+  background-position: center center;
+  height: 25rem
 }
 
 .living_room-right{
   background-size: cover;
   background-position: center center;
-  height: 40rem
+  height: 64rem
+}
+
+.collection-block{
+  padding: 2rem;
+}
+
+/*Events*/
+.event-block {
+}
+
+.event-details{
+  border-right: 1px solid black;
+
+}
+
+.event-description{
+  line-height: 100%;
 
 }

@@ -24,14 +24,14 @@
 
   <body>
 
-    <header class="top-banner">
+    <header id="home" class="top-banner">
   <nav>
-    <a href="Home">Home</a>
-    <a href="Latest">Latest</a>
-    <a href="Collections">Collections</a>
-    <a href="About Me">About Me</a>
-    <a href="Events">Events</a>
-    <a href="Contact">Contact</a>
+    <a href="#home">HOME</a>
+    <a href="#latest">LATEST</a>
+    <a href="#collections">COLLECTIONS</a>
+    <a href="#about me">ABOUT ME</a>
+    <a href="#events">EVENTS</a>
+    <a href="#contact">CONTACT</a>
   </nav>
 </header>
 
@@ -52,44 +52,47 @@
   </section>
 
 <!-- Latest Products -->
-  <section class="grid featured center">
+  <section id="latest" class="featured center padding-default">
+    <div class="max-width-default grid">
+
     <h3 class="col-12">Latest Products</h3>
 
   <div class="col-3">
       <div class="latest-photo"style="background-image: url('/images/table_latest1.jpg');">
-      </div class="center">
+      </div>
     <h4>Item Name<h4>
     <h5>$100.00<h5>
   </div>
 
   <div class="col-3">
       <div class="latest-photo"style="background-image: url('/images/serving_latest2.jpg');">
-      </div clas="center">
+      </div>
     <h4>Item Name<h4>
     <h5>$100.00<h5>
   </div>
 
   <div class="col-3">
       <div class="latest-photo" style="background-image: url('/images/display_latest3.jpg');">
-      </div class="center">
+      </div>
     <h4>Item Name<h4>
     <h5>$100.00<h5>
   </div>
 
   <div class="col-3">
       <div class="latest-photo" style="background-image: url('/images/serving_latest4.jpg');">
-      </div class="center">
+      </div>
     <h4>Item Name<h4>
     <h5>$100.00<h5>
-  </div>
+    </div>
 
+</div>
   </section>
 
 <!-- Collections -->
 
-<section class="grid">
+<section id="collections" class="grid center max-width-large">
 
-  <div class="col-6">
+  <div class="col-6 no-padding">
     <div class="kitchen-left" style="background-image: url('/images/kitchen.jpg');">
   </div>
 
@@ -98,72 +101,79 @@
 
 
   <div class="col-6 grid">
+
     <div class="col-6">
-      <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');">
-
-      </div>
+      <div class="collection-block">
+        <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');"></div>
         <h4>Item Name<h4>
         <h5>$100.00<h5>
-
-      <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');">
-
       </div>
+
+      <div class="collection-block">
+        <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');"></div>
         <h4>Item Name<h4>
         <h5>$100.00<h5>
+      </div>
     </div>
 
     <div class="col-6">
-      <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');">
-
-      </div>
+      <div class="collection-block">
+        <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');"></div>
         <h4>Item Name<h4>
         <h5>$100.00<h5>
-
-      <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');">
-
       </div>
+
+      <div class="collection-block">
+        <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');"></div>
         <h4>Item Name<h4>
         <h5>$100.00<h5>
+      </div>
     </div>
+
   </div>
 
 
 </section>
 
-<section class="grid">
+<section class="grid center max-width-large">
 
-  <div>
+  <div class="col-6 grid">
 
-    <div class"col-6 grid">
-      <div class="living">
-        <img src="images/living_collection_small.jpg" alt="lcollection">
+    <div class="col-6">
+      <div class="collection-block">
+        <div class="living_collection_small" style="background-image: url('/images/living_collection_small.jpg');"></div>
         <h4>Item Name<h4>
         <h5>$100.00<h5>
       </div>
 
-      <div class="">
-        <img src="images/living_collection_small.jpg" alt="lcollection">
+      <div class="collection-block">
+        <div class="living_collection_small" style="background-image: url('/images/living_collection_small.jpg');"></div>
         <h4>Item Name<h4>
         <h5>$100.00<h5>
       </div>
 
-      <div class="">
-        <img src="images/living_collection_small.jpg" alt="lcollection">
+    </div>
+
+    <div class="col-6">
+      <div class="collection-block">
+        <div class="living_collection_small" style="background-image: url('/images/living_collection_small.jpg');"></div>
         <h4>Item Name<h4>
         <h5>$100.00<h5>
       </div>
 
-      <div class="">
-        <img src="images/living_collection_small.jpg" alt="lcollection">
+      <div class="collection-block">
+        <div class="living_collection_small" style="background-image: url('/images/living_collection_small.jpg');"></div>
         <h4>Item Name<h4>
         <h5>$100.00<h5>
+      </div>
+
     </div>
 
   </div>
 
-  <div class="col-6">
+  <div class="col-6 no-padding">
     <div class="living_room-right" style="background-image: url('/images/living_room.jpg');">
-  </div>
+    </div>
 
   </div>
 
@@ -171,26 +181,28 @@
 </section>
 
 <!-- About Me -->
-<section>
+<section id="about-me" class="padding-default featured center">
+  <div class="max-width-default">
   <img src="" alt="">
     <h2>About Me</h2>
       <p> This is all the things about me. I really like my dog. Bleh</p>
       <p> This is more about me. I went to school. I worked for a long time.</p>
+  </div>
 
 </section>
 
 <!-- Events -->
-<section>
-  <div>
-    <h3>Events</h3>
-    <div class="">
+<section id="events" class="events-section padding-default">
+  <div class="max-width-small grid">
+    <h3 class="col-12 center">Events</h3>
+    <div class="col-5 center event-details">
       <h4>Tuesday</h4>
-      <h3>06</h3>
+      <h2>06</h2>
       <h4>MARCH</h4>
       <h4>2017</h4>
     </div>
 
-    <div class="">
+    <div class="col-7 event-description">
       <p>Third + Bird Spring Market 4th Annual Spring Market, Henderson Highway, Winnipeg, MB <a target="_blank" href="http://www.thirdandbirdevents.com"> www.thirdandbirdevents.com </a> </p>
     </div>
   </div>
@@ -208,7 +220,7 @@
 
     </div>
 
-    <footer>
+    <footer id="contact">
 
   <form>
     <label for="name">Name</label>
