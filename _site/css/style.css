@@ -126,7 +126,7 @@ nav a:hover {
 .hero-content{
   color: #fff;
   padding-left: 2vw;
-  padding-top: 2vw;
+  padding-top: 6vw;
   max-width: 40vw;
 }
 
@@ -176,8 +176,34 @@ nav a:hover {
   height: 64rem;
 }
 
-.living_room-text{
+.image-text {
   color: white;
+  padding: 25rem 0 0 2rem;
+  text-align: left;
+}
+.image-text p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 0.5rem;
+}
+.image-text h2 {
+  font-size: 6rem;
+}
+
+.image-text-right {
+  color: white;
+  padding: 25rem 2rem 0 0;
+  text-align: right;
+}
+.image-text-right p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding-right: 0.5rem;
+}
+.image-text-right h2 {
+  font-size: 6rem;
 }
 
 .collection-block{
@@ -223,8 +249,43 @@ nav a:hover {
 
 .event-description{
   line-height: 100%;
-
+  border-left: 1px solid black;
+  padding: 2rem 0 0 2rem;
 }
+
+
+/*Form*/
+input,textarea {
+  border: 1px solid #cecece;
+  padding: 0.8em;
+  font-size: 1em;
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+  vertical-align: top;
+  outline: none;
+  transition: all 0.3s ease;
+}
+textarea {
+  min-height: 7em;
+}
+input[type="submit"] {
+  width: auto;
+  display: block;
+  background-color: #d6922a; /* featured color */
+  color: #fff;
+  border: none;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #cecece;
+  box-shadow: 0 0 0.2rem 0 rgba(0,0,0,0.2);
+}
+
+form [class*=col-] {
+  padding: 1%;
+}
+
 
 /*Footer*/
 
