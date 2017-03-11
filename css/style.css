@@ -158,6 +158,12 @@ nav a:hover {
   height: 25rem
 }
 
+.kitchen-photo-product{
+  background-size: cover;
+  background-position: center center;
+  height: 40rem
+}
+
 .kitchen-left{
   background-size: cover;
   background-position: center center;
@@ -208,6 +214,11 @@ nav a:hover {
 
 .collection-block{
   padding: 2rem;
+}
+
+/*Individual Product Page*/
+.product-cost{
+  
 }
 
 /*About Me*/
