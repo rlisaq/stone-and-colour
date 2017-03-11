@@ -230,6 +230,7 @@ nav a:hover {
   margin: 0;
   padding-left: 0.5rem;
 }
+
 .image-text h2 {
   font-size: 6rem;
 }
@@ -239,12 +240,14 @@ nav a:hover {
   padding: 25rem 2rem 0 0;
   text-align: right;
 }
+
 .image-text-right p {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: 0;
   padding-right: 0.5rem;
 }
+
 .image-text-right h2 {
   font-size: 6rem;
 }
@@ -254,7 +257,7 @@ nav a:hover {
 }
 
 /*Individual Product Page*/
-<<<<<<< HEAD
+
 .product a{
   color: rgba(0, 0, 0, 0.8);
   font-size: 1rem;
@@ -263,10 +266,6 @@ nav a:hover {
 
 .product p{
   color: rgba(0, 0, 0, 0.5);
-=======
-.product-cost{
->>>>>>> 00ef88c1cf95be87694a04aa62ccf8468ecbc307
-
 }
 
 /*About Me*/
@@ -349,14 +348,29 @@ form [class*=col-] {
 
 footer {
   background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  /*height: 12rem;*/
+  padding-top: 12rem;
+  padding-bottom: 3rem;
+}
+
+footer .logo-image-footer {
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  top: -5rem;
+  left: 50%;
+  margin-left: -7rem;
+}
+
+footer .logo-image-footer img {
+  width: 100%;
+  height: auto;
 }
 
 footer a {
   color: white;
   font-size: 1.5rem;
-}
-
-.logo-image-footer{
-  width: 14rem;
-  height: 14rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
