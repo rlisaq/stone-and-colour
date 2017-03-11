@@ -217,8 +217,15 @@ nav a:hover {
 }
 
 /*Individual Product Page*/
-.product-cost{
-  
+.product a{
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  line-height: 3rem
+}
+
+.product p{
+  color: rgba(0, 0, 0, 0.5);
+
 }
 
 /*About Me*/
@@ -268,17 +275,17 @@ nav a:hover {
 /*Form*/
 input,textarea {
   border: 1px solid #cecece;
-  padding: 0.8em;
-  font-size: 1em;
+  padding: 0.8rem;
+  font-size: 1rem;
   display: block;
   width: 100%;
-  margin: 1em auto;
+  margin: 1rem auto;
   vertical-align: top;
   outline: none;
   transition: all 0.3s ease;
 }
 textarea {
-  min-height: 7em;
+  min-height: 7rem;
 }
 input[type="submit"] {
   width: auto;
@@ -297,11 +304,15 @@ form [class*=col-] {
   padding: 1%;
 }
 
-
 /*Footer*/
 
 footer {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer a {
+  color: white;
+  font-size: 1.5rem;
 }
 
 .logo-image-footer{
