@@ -1,7 +1,7 @@
 ---
 layout: product
-name: Candleholder
-category: living-room
+name: Desk
+category: kitchen
 image: kitchen_collection_small.jpg
 price: 100
 description: description

@@ -2,16 +2,36 @@
 layout: default
 ---
 
-<div class="grid">
+<section class="padding-default max-width-default">
 
-  {% for product in site.product %}
+  <h1 class="center">All products</h1>
 
-  <a href="{{ product.url }}" class="col-4">
+  <div class="filters">
 
-  <h1> {{product.name}} </h1>
+    <button class="filter-button" data-filter="*">Show all</button>
+    <button class="filter-button" data-filter=".kitchen">Kitchen</button>
+    <button class="filter-button" data-filter=".living-room">Living Room</button>
 
   </div>
 
-  {% endfor %}
+  <div class="product-categories">
 
-</div>
+    {% for product in site.product %}
+
+    <a href="{{ product.url }}" class="product-box {{ product.category }}" style="background-image: url('/images/{{ product.image }}')">
+
+      <h2> {{ product.name }} </h2>
+      <div class="price">
+        ${{ product.price }}
+      </div>
+      <div class="category">
+        {{ product.category }}
+      </div>
+
+    </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>

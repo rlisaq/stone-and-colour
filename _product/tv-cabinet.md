@@ -1,6 +1,6 @@
 ---
 layout: product
-name: Candleholder
+name: TV Cabinet
 category: living-room
 image: kitchen_collection_small.jpg
 price: 100

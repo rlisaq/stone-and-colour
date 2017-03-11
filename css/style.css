@@ -308,6 +308,35 @@ nav a:hover {
   padding: 2rem 0 0 2rem;
 }
 
+/* Products */
+.product-box {
+  width: 25%;
+  padding: 4rem 2rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center center;
+}
+.product-box h2 {
+  font-size: 2rem;
+}
+
+.filters {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.filter-button {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 3rem;
+  cursor: pointer;
+  outline: none;
+}
+
 
 /*Form*/
 input,textarea {
@@ -345,8 +374,22 @@ form [class*=col-] {
 
 footer {
   background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  height: 12rem;
 }
 
+footer .logo-image-footer {
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  top: -5rem;
+  left: 50%;
+  margin-left: -7rem;
+}
+footer .logo-image-footer img {
+  width: 100%;
+  height: auto;
+}
 footer a {
   color: white;
   font-size: 1.5rem;

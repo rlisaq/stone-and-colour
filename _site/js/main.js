@@ -3,17 +3,22 @@ $(document).ready(function(){
 
   // jQuery goes here
 
-  $('.products-section').isotope({
+  $('.product-categories').isotope({
     // options
-    itemSelector: '.all-products',
-    layoutMode: 'fitRows'
+    itemSelector: '.product-box'
+  });
+
+  $('.filter-button').click(function() {
+    var filterValue = $(this).data('filter');
+    console.log(filterValue);
+    $('.product-categories').isotope({ filter: filterValue });
   });
 
   // Fixed navigation trigger
 
   // On scroll
   if ($('body.home')) {
-    
+
     // Get height to top from latest section
     var heightToTop = $("#latest").offset().top;
 
