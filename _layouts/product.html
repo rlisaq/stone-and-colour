@@ -4,30 +4,30 @@ layout: default
 
   <section class="grid max-width-default product">
     <div class="col-6">
-      <div class="kitchen-photo-product" style="background-image: url('/images/kitchen_collection_small.jpg');">
+      <div class="kitchen-photo-product" style="background-image: url('/images/{{page.image}}');">
       </div>
     </div>
 
 <div class="col-6">
   <div>
-    <h2>Item Name</h2>
-    <h1 class="product">$100.00</h1>
+    <h1>{{page.name}}</h1>
+    <h2 class="product">${{page.price}}</h2>
   </div>
 
 <h3>Product Description</h3>
   <div>
-    <p> This product is a tall geometric tea light candle holder.
+    <p> {{page.description}}
     </p>
   </div>
 
   <div>
     <h3> Measurements</h3>
     <p>
-      30 inches wide x 14 inches height x 2 inches thick
+      {{page.measurements}}
     </p>
   </div>
 
-<h5>Category: kitchen, indoor</h5>
+<h5>Category: <span>{{page.category}}</span></h5>
 
   <a target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
   <a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
