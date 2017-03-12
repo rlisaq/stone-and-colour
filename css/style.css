@@ -149,6 +149,7 @@ nav .logo:hover {
 
 .hero-image {
   background-size: cover;
+  background-position: center center;
   height: 100vh;
 }
 .hero-image:before {
@@ -458,4 +459,12 @@ footer a {
   font-size: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+@media (max-width: 48rem){
+
+.grid{
+
+}
+
 }
