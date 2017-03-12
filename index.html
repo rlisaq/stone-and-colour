@@ -27,7 +27,7 @@ page-css: home
 
       {% for product in latestproducts limit:4 %}
 
-        <a href="{{ product.url }}" class="col-3 product-box-link">
+        <a href="{{ product.url }}" class="col-3_md-6_sm-12 product-box-link">
           <div class="">
             <div class="latest-photo center" style="background-image: url('/images/{{product.image}}');"></div>
             <h4>{{product.name}}</h4>
@@ -44,7 +44,7 @@ page-css: home
 
 <section id="collections" class="grid center max-width-large">
 
-  <a href="/all-products.html" class="col-6 no-padding">
+  <a href="/all-products.html" class="col-6_sm-12 no-padding">
     <div class="kitchen-left" style="background-image: url('/images/kitchen.jpg');">
       <div class="image-text">
         <p>Something about kitchens</p>
@@ -56,13 +56,13 @@ page-css: home
 
 
 
-  <div class="col-6 grid">
+  <div class="col-6_sm-12 grid">
 
     {% assign products = (site.product | where: "category" , "kitchen") %}
 
     {% for product in products limit: 4 %}
 
-        <a href="{{ product.url }}" class="col-6 product-box-link">
+        <a href="{{ product.url }}" class="col-6_sm-12 product-box-link">
           <div class="collection-block">
             <div class="kitchen-photo center" style="background-image: url('/images/{{product.image}}');"></div>
             <h4>{{product.name}}</h4>
@@ -79,13 +79,13 @@ page-css: home
 
 <section class="grid center max-width-large">
 
-  <div class="col-6 grid">
+  <div class="col-6_sm-12 grid">
 
     {% assign products = (site.product | where: "category" , "living-room") %}
 
     {% for product in products limit: 4 %}
 
-        <a href="{{ product.url }}" class="col-6 product-box-link">
+        <a href="{{ product.url }}" class="col-6_sm-12 product-box-link">
           <div class="collection-block">
             <div class="kitchen-photo center" style="background-image: url('/images/{{product.image}}');"></div>
             <h4>{{product.name}}</h4>
@@ -97,7 +97,7 @@ page-css: home
 
   </div>
 
-<a href="/all-products.html" class="col-6 no-padding">
+<a href="/all-products.html" class="col-6_sm-12 no-padding">
     <div class="living_room-right" style="background-image: url('/images/living_room.jpg');">
       <div class="image-text-right">
         <p>Something about Living Rooms</p>
@@ -119,7 +119,7 @@ page-css: home
 
     </div>
 
-    <div class="col-4">
+    <div class="col-4_sm-12">
       <div class="about-image" style="background-image: url('/images/about_image.jpg');">
 
         <div class="about-border">
@@ -133,7 +133,7 @@ page-css: home
 
     </div>
 
-    <div class="col-5 about-paragraph">
+    <div class="col-5_sm-12 about-paragraph">
       <h2>About Me</h2>
       <p> I am Amber Green of Stone + Colour Creative. As a full time Graphic Designer, I created this company as a hobby where I could be hands on in the creative process. There has always been within me a desire to create.
       </p>
