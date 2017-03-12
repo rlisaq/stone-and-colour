@@ -3,9 +3,8 @@ layout: default
 ---
 
   <section class="grid max-width-default product">
-    <div class="col-6">
-      <div class="kitchen-photo-product" style="background-image: url('/images/{{page.image}}');">
-      </div>
+    <div class="col-6 product-main-image">
+      <img src="/images/{{page.image}}" alt="">
     </div>
 
 <div class="col-6">
@@ -27,7 +26,7 @@ layout: default
     </p>
   </div>
 
-<h5>Category: <span>{{page.category}}</span></h5>
+<h5>Category: {% for category in page.category-name %}<span>{{category}}{% if forloop.last == false %}, {% endif %}</span>{% endfor %}</h5>
 
   <a target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
   <a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="padding-default max-width-default">
+<section class="max-width-default all-products">
 
   <h1 class="center">All products</h1>
 
@@ -11,6 +11,7 @@ layout: default
     <button class="filter-button" data-filter="*">Show all</button>
     <button class="filter-button" data-filter=".kitchen">Kitchen</button>
     <button class="filter-button" data-filter=".living-room">Living Room</button>
+    <button class="filter-button" data-filter=".patio">Patio</button>
 
   </div>
 
@@ -18,14 +19,13 @@ layout: default
 
     {% for product in site.product %}
 
-    <a href="{{ product.url }}" class="product-box {{ product.category }}" style="background-image: url('/images/{{ product.image }}')">
-
+    <a href="{{ product.url }}" class="product-box {% for category in product.category %}{{category}} {% endfor %}" style="background-image: url('/images/{{ product.image }}')">
       <h2> {{ product.name }} </h2>
       <div class="price">
         ${{ product.price }}
       </div>
       <div class="category">
-        {{ product.category }}
+        {% for category in product.category-name %}<span>{{category}}{% if forloop.last == false %}, {% endif %}</span>{% endfor %}
       </div>
 
     </a>

@@ -23,82 +23,54 @@ page-css: home
 
     <h3 class="col-12">Latest Products</h3>
 
-  <div class="col-3">
-      <div class="latest-photo"style="background-image: url('/images/table_latest1.jpg');">
-      </div>
-    <h4>Item Name<h4>
-    <h5>$100.00<h5>
-  </div>
+    {% assign latestproducts = (site.product | sort: 'date') | reverse %}
 
-  <div class="col-3">
-      <div class="latest-photo"style="background-image: url('/images/serving_latest2.jpg');">
-      </div>
-    <h4>Item Name<h4>
-    <h5>$100.00<h5>
-  </div>
+      {% for product in latestproducts limit:4 %}
 
-  <div class="col-3">
-      <div class="latest-photo" style="background-image: url('/images/display_latest3.jpg');">
-      </div>
-    <h4>Item Name<h4>
-    <h5>$100.00<h5>
-  </div>
+        <a href="{{ product.url }}" class="col-3 product-box-link">
+          <div class="">
+            <div class="latest-photo center" style="background-image: url('/images/{{product.image}}');"></div>
+            <h4>{{product.name}}</h4>
+            <h5>${{product.price}}</h5>
+          </div>
+        </a>
 
-  <div class="col-3">
-      <div class="latest-photo" style="background-image: url('/images/serving_latest4.jpg');">
-      </div>
-    <h4>Item Name<h4>
-    <h5>$100.00<h5>
+      {% endfor %}
+
     </div>
-
-</div>
   </section>
 
 <!-- Collections -->
 
 <section id="collections" class="grid center max-width-large">
 
-  <div class="col-6 no-padding">
+  <a href="/all-products.html" class="col-6 no-padding">
     <div class="kitchen-left" style="background-image: url('/images/kitchen.jpg');">
       <div class="image-text">
         <p>Something about kitchens</p>
         <h2>Kitchen</h2>
       </div>
-  </div>
+    </div>
+  </a>
 
-  </div>
 
 
 
   <div class="col-6 grid">
 
-    <div class="col-6">
-      <div class="collection-block">
-        <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');"></div>
-        <h4>Item Name<h4>
-        <h5>$100.00<h5>
-      </div>
+    {% assign products = (site.product | where: "category" , "kitchen") %}
 
-      <div class="collection-block">
-        <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');"></div>
-        <h4>Item Name<h4>
-        <h5>$100.00<h5>
-      </div>
-    </div>
+    {% for product in products limit: 4 %}
 
-    <div class="col-6">
-      <div class="collection-block">
-        <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');"></div>
-        <h4>Item Name<h4>
-        <h5>$100.00<h5>
-      </div>
+        <a href="{{ product.url }}" class="col-6 product-box-link">
+          <div class="collection-block">
+            <div class="kitchen-photo center" style="background-image: url('/images/{{product.image}}');"></div>
+            <h4>{{product.name}}</h4>
+            <h5>${{product.price}}</h5>
+          </div>
+        </a>
 
-      <div class="collection-block">
-        <div class="kitchen-photo center" style="background-image: url('/images/kitchen_collection_small.jpg');"></div>
-        <h4>Item Name<h4>
-        <h5>$100.00<h5>
-      </div>
-    </div>
+    {% endfor %}
 
   </div>
 
@@ -109,39 +81,23 @@ page-css: home
 
   <div class="col-6 grid">
 
-    <div class="col-6">
-      <div class="collection-block">
-        <div class="living_collection_small" style="background-image: url('/images/living_collection_small.jpg');"></div>
-        <h4>Item Name<h4>
-        <h5>$100.00<h5>
-      </div>
+    {% assign products = (site.product | where: "category" , "living-room") %}
 
-      <div class="collection-block">
-        <div class="living_collection_small" style="background-image: url('/images/living_collection_small.jpg');"></div>
-        <h4>Item Name<h4>
-        <h5>$100.00<h5>
-      </div>
+    {% for product in products limit: 4 %}
 
-    </div>
+        <a href="{{ product.url }}" class="col-6 product-box-link">
+          <div class="collection-block">
+            <div class="kitchen-photo center" style="background-image: url('/images/{{product.image}}');"></div>
+            <h4>{{product.name}}</h4>
+            <h5>${{product.price}}</h5>
+          </div>
+        </a>
 
-    <div class="col-6">
-      <div class="collection-block">
-        <div class="living_collection_small" style="background-image: url('/images/living_collection_small.jpg');"></div>
-        <h4>Item Name<h4>
-        <h5>$100.00<h5>
-      </div>
-
-      <div class="collection-block">
-        <div class="living_collection_small" style="background-image: url('/images/living_collection_small.jpg');"></div>
-        <h4>Item Name<h4>
-        <h5>$100.00<h5>
-      </div>
-
-    </div>
+    {% endfor %}
 
   </div>
 
-  <div class="col-6 no-padding">
+<a href="/all-products.html" class="col-6 no-padding">
     <div class="living_room-right" style="background-image: url('/images/living_room.jpg');">
       <div class="image-text-right">
         <p>Something about Living Rooms</p>
@@ -149,7 +105,7 @@ page-css: home
       </div>
     </div>
 
-  </div>
+  </a>
 
 
 </section>

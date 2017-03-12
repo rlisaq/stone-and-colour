@@ -1,7 +1,10 @@
 ---
 layout: product
 name: Wall Decor
-category: living room, study, office
+category:
+  - kitchen
+category-name:
+  - Kitchen
 image: display_latest3.jpg
 price: 100
 description: This is a piece of wall decor made from various types of wood. It is in the shape of a triangle and can be mounted in any direction.

@@ -11,6 +11,9 @@ p {
   line-height: 2rem;
   margin-bottom: 1.5rem;
 }
+a {
+  text-decoration: none;
+}
 
 .padding-default{
   padding: 10vh 0
@@ -136,6 +139,13 @@ nav a:hover {
   color: #d6922a;
   background-color: white;
 }
+nav .logo {
+  padding: 0;
+}
+nav .logo:hover {
+  padding: 0;
+  background-color: transparent;
+}
 
 .hero-image {
   background-size: cover;
@@ -192,7 +202,7 @@ nav a:hover {
 .kitchen-photo{
   background-size: cover;
   background-position: center center;
-  height: 25rem
+  height: 23.5rem
 }
 
 .kitchen-photo-product{
@@ -210,13 +220,21 @@ nav a:hover {
 .living_collection_small{
   background-size: cover;
   background-position: center center;
-  height: 25rem;
+  height: 23.5rem;
 }
 
 .living_room-right{
   background-size: cover;
   background-position: center center;
   height: 64rem;
+}
+
+.product-box-link {
+  color: #333;
+  text-decoration: none;
+}
+.product-box-link h4 {
+  padding-top: 1rem;
 }
 
 .image-text {
@@ -258,6 +276,10 @@ nav a:hover {
 
 /*Individual Product Page*/
 
+.product, .all-products {
+  padding-bottom: 6rem;
+}
+
 .product a{
   color: rgba(0, 0, 0, 0.8);
   font-size: 1rem;
@@ -279,6 +301,11 @@ nav a:hover {
   font-size: 3rem;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
+}
+
+.product-main-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*About Me*/
